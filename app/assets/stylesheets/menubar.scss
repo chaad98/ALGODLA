@@ -1,4 +1,67 @@
 .menubar-container{
-    height: 500px;
-    background-color: black;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 1.5% 3.5%
 }
+
+.menubar-child{
+    width: 100%;
+    display: flex;
+    padding: 0.2%;
+}
+
+.menu-subchild{
+    display: flex;
+}
+
+.logo{
+    width: 180px;
+    height: auto;
+}
+
+.menu-subchild.one{
+    width: 50%;
+}
+
+.menu-subchild.two{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    opacity: .78;
+}
+
+/* Smaller screens (up to 991px) */
+@media screen and (max-width: 991px) {
+    .menu-subchild.one,
+    .menu-subchild.two {
+      width: 100%;
+      display: flex;
+      flex-direction: row; /* Display menu items vertically */
+      justify-content: center;
+      align-items: center; /* Center-align menu items */
+      gap: 20px; /* Adjust the gap between menu items */
+      padding: 1%;
+    }
+
+    .menu-link {
+        font-size: 16px;
+    }
+
+    .logo {
+        max-width: 60%;
+    }
+  }
+  

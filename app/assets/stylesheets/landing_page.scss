@@ -1,0 +1,14 @@
+.section1-container{
+    height: 950px;
+    background-image: url("wallpaper.jpg");
+    background-size: 100%;
+    // background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+
+.section2-container{
+    height: 1000px;
+    background-color: rgb(224, 202, 202);
+}

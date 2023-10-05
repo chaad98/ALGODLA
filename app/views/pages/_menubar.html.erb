@@ -1,2 +1,13 @@
 <div class="menubar-container">
+    <div class="menubar-child">
+        <div class="menu-subchild one">
+            <%= link_to root_path do %>
+                <%= image_tag "algodla_white.png", class: "logo" %>
+            <% end %>
+        </div>
+        <div class="menu-subchild two">
+            <%= link_to "ALGODLA", root_path, class: "menu-link one" %>
+            <%= link_to "Contact", contact_path, class: "menu-link two" %>
+        </div>
+    </div>
 </div>

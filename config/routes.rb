@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "pages#landing_page"
+
+  get "contact", to: "pages#contact_us"
+
+  resources :enquiries
 end
