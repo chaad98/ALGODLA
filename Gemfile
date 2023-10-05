@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.2"
 
+# for Bootstrap
+gem 'bootstrap', '~> 5.3.1'
+
 # for JSON and HTTP Request post to API
 gem 'httparty'
 
