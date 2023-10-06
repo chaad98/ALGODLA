@@ -1,5 +1,5 @@
 .menubar-container{
-    height: 110px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,8 +20,9 @@
 }
 
 .logo{
-    width: 180px;
+    width: 150px;
     height: auto;
+    margin-top: -10px;
 }
 
 .menu-subchild.one{
@@ -39,12 +40,26 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+    font-weight: 300;
     color: #fff;
     opacity: .78;
 }
 
+.scrolled{
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-link.scrolled{
+    color: black;
+}
+
 /* Smaller screens (up to 991px) */
 @media screen and (max-width: 991px) {
+    .menubar-container{
+        height: 60px;
+    }
+
     .menu-subchild.one,
     .menu-subchild.two {
       width: 100%;
@@ -61,7 +76,9 @@
     }
 
     .logo {
-        max-width: 60%;
+        max-width: 80%;
+        height: auto;
+        margin-top: 5px;
     }
   }
   
