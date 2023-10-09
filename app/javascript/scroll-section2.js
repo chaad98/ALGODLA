@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const downArrow = document.querySelector('.down-arrow a');
     const howItWorksLink = document.querySelector('.works-path');
     const section2 = document.querySelector('#section2-js');
+    const section3 = document.querySelector('#section3-js');
   
     // Function to scroll to the target element
     function scrollToElement(element) {
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     howItWorksLink.addEventListener('click', function(e) {
       e.preventDefault();
-      scrollToElement(section2);
+      scrollToElement(section3);
     });
   });
   
