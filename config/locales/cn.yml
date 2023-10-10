@@ -3,3 +3,8 @@ cn:
     en: "en"
     bm: "bm"
     cn: "cn"
+  pages:
+    flash:
+      success: "表单已成功提交！"
+      danger: "请填写所有的细节！"
+      danger_api: "内部服务器错误！请稍后再次提交表单"

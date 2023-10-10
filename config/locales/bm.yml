@@ -3,3 +3,8 @@ bm:
     en: "en"
     bm: "bm"
     cn: "cn"
+  pages:
+    flash:
+      success: "Borang telah berjaya dihantar!"
+      danger: "Sila isi semua butiran!"
+      danger_api: "Ralat pelayan dalaman! Sila hantar borang kemudian sekali lagi"

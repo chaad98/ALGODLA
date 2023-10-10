@@ -14,13 +14,14 @@ class EnquiriesController < ApplicationController
 
     def create
         @enquiry = Enquiry.new(enquiry_params)
+        @enquiry.language = I18n.locale.to_s
         
         if @enquiry.save
             # Save the data to the JSON file after a new record is created
             save_to_json
 
             # Build the JSON data you want to send to the external API
-            json_data = @enquiry.attributes.to_json
+            json_data = @enquiry.attributes.merge(language: I18n.locale.to_s).to_json
 
             # Build the JSON data you want to send to the external API
             api_url = 'https://www.api-controller.com/api/algodla_contact_form_mail.php?json='
@@ -30,14 +31,14 @@ class EnquiriesController < ApplicationController
             response = HTTParty.post(api_url_with_query, body: json_data, headers: { 'Content-Type' => 'application/json' })
 
             if response.success?
-                redirect_to root_path, success: "Forms has been submitted successfully!"
+                redirect_to root_path, success: t('pages.flash.success')
                 Rails.logger.info("API Response: #{response.code} - #{response.body}")
             else
                 Rails.logger.error("API Error: #{response.code} - #{response.body}")
-                flash.now[:danger] = "Error sending data to the API!"
+                flash.now[:danger] = t('pages.flash.danger_api')
             end
         else
-            redirect_to root_path, danger: "Please key in all of the details!"
+            redirect_to root_path, danger: t('pages.flash.danger')
         end
     end
 
@@ -71,8 +72,8 @@ class EnquiriesController < ApplicationController
         # Retrieve all the records from your database
         enquiries = Enquiry.all
     
-        # Convert the records to an array of hashes
-        data = enquiries.map(&:attributes)
+        # Convert the records to an array of hashes with the "language" attribute
+        data = enquiries.map { |enquiry| enquiry.attributes }
     
         # Write the data to the JSON file, overwriting its contents
         File.write(json_file_path, JSON.pretty_generate(data))

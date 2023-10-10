@@ -34,3 +34,9 @@ en:
     en: "en"
     bm: "bm"
     cn: "cn"
+  pages:
+    flash:
+      success: "Form has been submitted successfully!"
+      danger: "Please key in all of the details!"
+      danger_api: "Internal server error! Please submit the form later again"
+

@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuBar = document.querySelector(".menubar-container");
-    const menuLinks = document.querySelectorAll(".menu-link"); // Select all menu links
-    const logoImage = document.querySelector(".logo"); // Select the logo image element
-    
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const logoImage = document.querySelector(".logo");
+
     // Define the scroll threshold (20% of the viewport height)
     const scrollThreshold = window.innerHeight * 0.2;
 
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleScrolledClass() {
         if (window.scrollY > scrollThreshold) {
             menuBar.classList.add("scrolled");
-            // Apply the "scrolled" class to menu links
             menuLinks.forEach((link) => {
                 link.classList.add("scrolled");
             });
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         } else {
             menuBar.classList.remove("scrolled");
-            // Remove the "scrolled" class from menu links
             menuLinks.forEach((link) => {
                 link.classList.remove("scrolled");
             });
@@ -36,6 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 isImageBlack = false;
             }
         }
+
+        // Apply the "scrolled" class to nav-lang links
+        const navLangLinks = document.querySelectorAll(".nav-lang a");
+        navLangLinks.forEach((link) => {
+            if (window.scrollY > scrollThreshold) {
+                link.classList.add("scrolled");
+            } else {
+                link.classList.remove("scrolled");
+            }
+        });
     }
 
     // Add scroll event listener
