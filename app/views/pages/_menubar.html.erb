@@ -8,6 +8,20 @@
         <div class="menu-subchild two">
             <%= link_to "ALGODLA", root_path, class: "menu-link one" %>
             <%= link_to "Contact", contact_path, class: "menu-link two" %>
+            <ul class="navbar-nav ml-lg-auto navbar-list">
+                <% I18n.available_locales.each_with_index do |locale, index| %>
+                    <li class="nav-lang">
+                    <% if I18n.locale == locale %>
+                        <%= t(locale, scope: 'locales', class: 'selected-locale') %>
+                    <% else %>
+                        <%= link_to t(locale, scope: 'locales'), url_for(locale: locale), class: 'locale-link' %>
+                    <% end %>
+                    <% unless index == I18n.available_locales.size - 1 %>
+                        |&nbsp; <!-- Add spaces and the separator "|" unless it's the last language -->
+                    <% end %>
+                    </li>
+                <% end %>
+            </ul>
         </div>
     </div>
 </div>

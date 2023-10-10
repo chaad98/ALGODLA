@@ -9,6 +9,9 @@ gem 'bootstrap', '~> 5.3.1'
 # for JSON and HTTP Request post to API
 gem 'httparty'
 
+# The translation language
+gem 'i18n', '~> 1.14', '>= 1.14.1'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
 
