@@ -1,0 +1,109 @@
+<% content_for :title, "Contact | ALGODLA" %>
+
+<div class="contact-container">
+    <div class="contact-child">
+        <div class="contact-subchild one">
+            <p>Contact</p>
+        </div>
+        <div class="contact-subchild two">
+            <p>Contact us with your questions</p>
+        </div>
+    </div>
+</div>
+
+<div class="section2-contact-container">
+    <div class="section2-contact-child">
+        <div class="section2-contact-subchild one">
+            <p>Let's get in touch</p>
+        </div>
+        <div class="section2-contact-subchild two">
+             <%= form_with(model: @enquiry, url: enquiries_path) do |form| %>
+                <div class="section2-inner two">
+                    <div class="label">
+                        <%= form.label :name, class: "inner-label" %>
+                    </div>
+                    <div class="field">
+                    <%= form.text_field :name, class: "inner-field", placeholder: "Enter your full name" %>
+                    </div>
+                </div>
+
+                <div class="section2-inner two">
+                    <div class="label">
+                        <%= form.label :email, class: "inner-label" %>
+                    </div>
+                    <div class="field">
+                        <%= form.text_field :email, class: "inner-field", placeholder: "Enter your email address" %>
+                    </div>
+                </div>
+
+                <div class="section2-inner two">
+                    <div class="label">
+                        <%= form.label :phone_number, class: "inner-label" %>
+                    </div>
+                    <div class="field">
+                        <%= form.text_field :phone_number, class: "inner-field", placeholder: "Enter your phone number" %>
+                    </div>
+                </div>
+
+                <div class="section2-inner two">
+                    <div class="label">
+                        <%= form.label :message, class: "inner-label" %>
+                    </div>
+                    <div class="field">
+                        <%= form.text_area :message, class: "area-field", placeholder: "Enter your message" %>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <%= form.submit "SUBMIT MESSAGE", class: "submit-button" %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>
+
+<div class="section3-contact-container">
+    <div class="section3-contact-child">
+        <div class="section3-contact-subchild one"> 
+            <p>Meet Our Team</p>
+        </div>
+        <div class="section3-contact-subchild two">
+            <p>We bring artificial intelligence for algorithmic trading to everyone</p>
+        </div>
+        <div class="section3-contact-subchild three">
+            <div class="section3-contact-innerchild one">
+                <div class="section3-contact-image">
+                    <%= image_tag "oliver.png", class:'section5-img' %>
+                </div>
+                <div class="section3-contact-title">
+                    <p>Oliver Krupa</p>
+                </div>
+                <div class="section3-contact-desc">
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+            <div class="section3-contact-innerchild two">
+                <div class="section3-contact-image">
+                    <%= image_tag "damien.png", class:'section5-img' %>
+                </div>
+                <div class="section3-contact-title">
+                    <p>Damien Reaver</p>
+                </div>
+                <div class="section3-contact-desc">
+                    <p>Founder / Trader / Engineer</p>
+                </div>
+            </div>
+            <div class="section3-contact-innerchild three">
+                <div class="section3-contact-image">
+                    <%= image_tag "alex.png", class:'section5-img' %>
+                </div>
+                <div class="section3-contact-title">
+                    <p>Alex Bauer</p>
+                </div>
+                <div class="section3-contact-desc">
+                    <p>Co-founder / Trader</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
