@@ -36,6 +36,33 @@
     margin-top: 1%;
 }
 
+/* Your existing CSS for screens above 991px */
+
+@media screen and (max-width: 991px) {
+    .contact-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 8% 5%; /* Adjust padding for smaller screens */
+      text-align: center; /* Center text horizontally */
+      background-attachment: scroll; /* Change background attachment for smaller screens */
+    }
+  
+    .contact-child {
+      padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .contact-subchild.one {
+      font-size: 36px; /* Adjust font size for smaller screens */
+      line-height: 46px; /* Adjust line height for smaller screens */
+      letter-spacing: 0; /* Reset letter-spacing */
+    }
+  
+    .contact-subchild.two {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      margin-top: 1%; /* Adjust margin for smaller screens */
+    }
+  }
+  
+
 //section2
 .section2-contact-container{
     height: 1000px;
@@ -130,6 +157,55 @@
     background-color: #111;
     border: 1px solid #111;
 }
+
+/* Your existing CSS for screens above 991px */
+
+@media screen and (max-width: 991px) {
+    .section2-contact-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 8% 5%; /* Adjust padding for smaller screens */
+      text-align: center; /* Center text horizontally */
+    }
+  
+    .section2-contact-subchild.one {
+      font-size: 36px; /* Adjust font size for smaller screens */
+      line-height: 46px; /* Adjust line height for smaller screens */
+      letter-spacing: 0; /* Reset letter-spacing */
+    }
+  
+    .section2-contact-subchild.two {
+      margin-top: 3%; /* Adjust margin for smaller screens */
+    }
+  
+    .section2-inner {
+      height: auto; /* Reset height */
+      margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+  
+    .inner-label {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      font-weight: 600; /* Increase font weight for readability */
+    }
+  
+    .inner-field,
+    .area-field {
+      width: 100%; /* Set width to 100% for responsiveness */
+      height: 40px; /* Reduce field height for smaller screens */
+    }
+  
+    .area-field {
+      height: 100px; /* Reduce textarea height for smaller screens */
+    }
+  
+    .actions {
+      height: auto; /* Reset height */
+      margin-top: 6%; /* Adjust margin for smaller screens */
+    }
+  
+    .submit-button {
+      width: 100%; /* Set width to 100% for responsiveness */
+    }
+  }  
 
 //section3
 .section3-contact-container{

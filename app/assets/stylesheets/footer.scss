@@ -42,3 +42,29 @@
     color: #333;
     margin-top: 2%;
 }
+
+/* Your existing CSS for screens above 991px */
+
+@media screen and (max-width: 991px) {
+    .footer-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 4% 5%; /* Adjust padding for smaller screens */
+      text-align: center; /* Center text horizontally */
+    }
+  
+    .footer-subchild.one {
+      font-size: 18px; /* Adjust font size for smaller screens */
+      font-weight: 600; /* Increase font weight for readability */
+    }
+  
+    .footer-subchild.two {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin-top: 2%; /* Adjust margin for smaller screens */
+    }
+  
+    .footer-subchild.three {
+      font-size: 12px; /* Adjust font size for smaller screens */
+      margin-top: 2%; /* Adjust margin for smaller screens */
+    }
+  }
+  

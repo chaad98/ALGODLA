@@ -398,6 +398,7 @@
     }
   }
 
+//section3
 .section3-container{
     height: 1200px;
     display: flex;
@@ -505,6 +506,64 @@
     border: 1px solid #111;
 }
 
+/* Your existing CSS for screens above 991px */
+
+@media screen and (max-width: 991px) {
+    .section3-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 8% 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section3-child {
+      padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section3-subchild {
+      padding: 0 5% 5% 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section3-title {
+      font-size: 36px; /* Adjust font size for smaller screens */
+      line-height: 46px; /* Adjust line height for smaller screens */
+    }
+  
+    .subtitle {
+      font-size: 18px; /* Adjust font size for smaller screens */
+      line-height: 28px; /* Adjust line height for smaller screens */
+      margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .section3-desc {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      line-height: 26px; /* Adjust line height for smaller screens */
+      margin-top: 2%;
+    }
+  
+    .section3-pic {
+      margin-top: 2%;
+    }
+  
+    .works-bot {
+      width: 100%; /* Set image width to 100% for responsiveness */
+      max-width: 730px; /* Add max-width to limit image size */
+      height: auto;
+    }
+  
+    .subtitle-two {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin-top: 2%;
+    }
+  
+    .button {
+      margin-top: 2%;
+    }
+  
+    .section3-btn {
+      width: 100%; /* Set button width to 100% for responsiveness */
+    }
+  }
+  
+
 //section4
 .section4-container{
     width: 100%;
@@ -593,6 +652,58 @@
     border: 1px solid #111;
 }
 
+@media screen and (max-width: 991px) {
+    .section4-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 8% 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section4-child {
+      padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section4-subchild.one {
+      font-size: 36px; /* Adjust font size for smaller screens */
+      line-height: 46px; /* Adjust line height for smaller screens */
+      text-align: center; /* Center text */
+    }
+  
+    .section4-subchild.two {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      margin-top: 1%; /* Adjust margin for smaller screens */
+      text-align: center; /* Center text */
+    }
+  
+    .section4-subchild.three {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+      margin-top: 4%; /* Adjust margin for smaller screens */
+    }
+  
+    .innerchild {
+      text-align: center; /* Center text */
+    }
+  
+    .section4-title {
+      margin-top: 5%;
+      font-size: 24px; /* Adjust font size for smaller screens */
+      line-height: 34px; /* Adjust line height for smaller screens */
+      color: #111;
+    }
+  
+    .section4-desc {
+      color: #333;
+    }
+  
+    .section4-subchild.four {
+      margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .section4-btn {
+      width: 100%; /* Set button width to 100% for responsiveness */
+    }
+  }
+  
 //section5
 .section5-container{
     width: 100%;
@@ -660,3 +771,57 @@
     font-weight: 400;
     color: #333;
 }
+
+@media screen and (max-width: 991px) {
+    .section5-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 8% 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section5-child {
+      padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .section5-subchild.one {
+      font-size: 36px; /* Adjust font size for smaller screens */
+      line-height: 46px; /* Adjust line height for smaller screens */
+      text-align: center; /* Center text */
+    }
+  
+    .section5-subchild.two {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      margin-top: 1%; /* Adjust margin for smaller screens */
+      text-align: center; /* Center text */
+    }
+  
+    .section5-subchild.three {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+      margin-top: 4%; /* Adjust margin for smaller screens */
+      gap: 10px; /* Adjust gap between inner children */
+    }
+  
+    .section5-innerchild {
+      text-align: center; /* Center text */
+    }
+  
+    .section5-img {
+      width: 100%; /* Set image width to 100% for responsiveness */
+      max-width: 350px; /* Add max-width to limit image size */
+      height: auto;
+    }
+  
+    .section5-title {
+      margin-top: 5%;
+      font-size: 20px; /* Adjust font size for smaller screens */
+      line-height: 30px; /* Adjust line height for smaller screens */
+      color: #111;
+    }
+  
+    .section5-desc {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin-top: 1%; /* Adjust margin for smaller screens */
+      color: #333;
+    }
+  }
+  
