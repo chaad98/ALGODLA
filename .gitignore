@@ -37,5 +37,5 @@
 .ruby-gemset
 config/puma.rb
 
-# public/data/
+public/data/
 # db/migrate/

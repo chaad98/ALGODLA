@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "hello",
+    "email": "faritzchad@yahoo.com",
+    "phone_number": "123123",
+    "message": "asdasd",
+    "created_at": "2023-10-10 19:27:10 UTC",
+    "updated_at": "2023-10-10 19:27:10 UTC",
+    "language": "en"
+  },
+  {
+    "id": 2,
+    "name": "test_chad",
+    "email": "faritzchad@yahoo.com",
+    "phone_number": "123",
+    "message": "Ruby is here",
+    "created_at": "2023-10-10 19:52:21 UTC",
+    "updated_at": "2023-10-10 19:52:21 UTC",
+    "language": "cn"
+  }
+]
