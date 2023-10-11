@@ -1,8 +1,8 @@
 cn:
   locales:
-    en: "英文"
-    ms: "马来文"
-    cn: "中文"
+    en: "en"
+    ms: "ms"
+    cn: "cn"
   pages:
     flash:
       success: "表单已成功提交！"
