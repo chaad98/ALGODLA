@@ -1,0 +1,83 @@
+ms:
+  locales:
+    en: "en"
+    ms: "ms"
+    cn: "cn"
+  pages:
+    flash:
+      success: "Borang telah berjaya dihantar!"
+      danger: "Sila masukkan semua butiran!"
+      danger_api: "Ralat pelayan dalaman! Sila hantar borang nanti lagi."
+    menubar:
+      menu_link1: "ALGODLA"
+      menu_link2: "Hubungi Kami"
+    landing_page:
+      section1_initial_desc: "Keuntungan BULANAN 3.9%"
+      section1_title: "Robot Perdagangan AI Auto"
+      section1_btn_result: "LIHAT HASIL"
+      section1_btn_free: "CUBA SECARA PERCUMA"
+      section1_link_works: "Bagaimana Ia Berfungsi?"
+      section2_title1: "Perdagangan algoritmik dengan"
+      section2_title2: "kecerdasan buatan (AI)"
+      section2_ai: "Apakah ALGODLA"
+      section2_ai_desc: "Robot perisian yang berdagang untuk anda. CarinaBot menganalisis pasaran dan berdagang secara automatik pada akaun anda."
+      section2_money: "Bayar hanya apabila anda untung"
+      section2_money_desc1: "Pertama 3 bulan percuma. Anda akan melihat bagaimana ia berfungsi dan sama ada anda suka."
+      section2_money_desc2: "TIADA PEMBAYARAN DI MUKA"
+      section2_shield: "Tiada akses kepada wang anda"
+      section2_shield_desc: "Kami bukan firma pelaburan, dan kami tidak meminta wang anda. Anda mempunyai wang anda sendiri dalam akaun anda."
+      section2_automated: "Mudah dan automatik"
+      section2_automated_desc: "ALGODLA sesuai untuk pemula juga. Sambungkannya dengan akaun anda, dan ia akan berdagang secara automatik untuk anda."
+      section2_btn_free: "PERTAMA 3 BULAN SECARA PERCUMA"
+      section2_result: "Hasil bercakap sendiri"
+      section3_title: "Bagaimana Ia Berfungsi?"
+      section3_subtitle: "Robot Perdagangan AI Automatik"
+      section3_desc: "Menggunakan kecerdasan buatan dan algoritma pemodelan segitiga, CarinaBot meramalkan pergerakan harga EUR/USD pada masa depan untuk tempoh beberapa minit. Apabila peluang yang baik berlaku, CarinaBot berdagang secara automatik dan memperoleh keuntungan dalam akaun anda."
+      section3_subtitle2: "* ALGODLA tidak boleh membuat pengeluaran"
+      section3_btn_learn: "KETAHUI LEBIH LANJUT"
+      section3_btn_free: "COBA 3 BULAN SECARA PERCUMA"
+      section4_title: "Mengapa Cuba"
+      section4_subtitle: "Mudah. Adil. Selamat."
+      section4_gift_title: "3 bulan secara percuma"
+      section4_gift_desc: "Tiada kos untuk mencuba. Tiada langganan, tiada kad kredit. Cuba DEMO atau LIVE."
+      section4_setting_title: "Ia sepenuhnya automatik"
+      section4_setting_desc: "Tiada kemahiran khas diperlukan. ALGODLA berdagang untuk anda sepenuhnya secara automatik."
+      section4_hand_title: "Bayar hanya apabila anda untung"
+      section4_hand_desc: "Anda hanya berkongsi 10% dengan kami apabila ia benar-benar memperoleh keuntungan untuk anda."
+      section4_shield_title: "Selamat dan terjamin"
+      section4_shield_desc: "ALGODLA hanya berdagang untuk anda. Ia tidak boleh membuat sebarang pengeluaran atau pindahan."
+      section4_btn_try: "MARI CUBA"
+      section5_title: "Siapa yang boleh menggunakannya?"
+      section5_desc: "Tingkatkan perdagangan anda dan menjadi menguntungkan"
+      section5_beginner: "Pemula"
+      section5_beginner_desc: "Berdagang tanpa kemahiran khas"
+      section5_expert: "Pakar"
+      section5_expert_desc: "Naik taraf keuntungan anda"
+      section5_manager: "Pengurus portfolio"
+      section5_manager_desc: "Berdagang untuk pelanggan anda"
+    contact_us:
+      contact_title: "Hubungi Kami"
+      contact_questions: "Hubungi kami dengan soalan anda"
+      contact_touch: "Mari kita berhubung"
+    footer:
+      footer_title: "© 2023 ALGODLA.com"
+      footer_link1: "Terma |"
+      footer_link2: "Terma untuk VPS |"
+      footer_link3: "Privasi & Kuki"
+      footer_desc: "ALGODLA adalah aplikasi web analitik berkuasa AI automatik yang boleh anda sambungkan ke akaun anda. Ia menjalankan analisis pasaran dan menyediakan anda dengan pandangan masa sebenar."
+  activerecord:
+    attributes:
+      enquiry:
+        name: "Nama"
+        email: "Emel"
+        phone_number: "Nombor Telefon"
+        message: "Mesej"
+  placeholders:
+    enquiry:
+      name: "Masukkan nama penuh anda"
+      email: "Masukkan alamat emel anda"
+      phone_number: "Masukkan nombor telefon anda"
+      message: "Masukkan mesej anda"
+  global:
+    forms:
+      submit: "HANTAR MESEJ"

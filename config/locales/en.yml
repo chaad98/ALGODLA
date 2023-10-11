@@ -32,11 +32,83 @@
 en:
   locales:
     en: "en"
-    bm: "bm"
+    ms: "ms"
     cn: "cn"
   pages:
     flash:
       success: "Form has been submitted successfully!"
       danger: "Please key in all of the details!"
       danger_api: "Internal server error! Please submit the form later again"
-
+    menubar:
+      menu_link1: "ALGODLA"
+      menu_link2: "Contact"
+    landing_page:
+      section1_initial_desc: "3.9% MONTHLY PROFITS"
+      section1_title: "AI Auto-Trading Robot"
+      section1_btn_result: "SEE RESULTS"
+      section1_btn_free: "TRY FOR FREE"
+      section1_link_works: "How It Works?"
+      section2_title1: "Algorithmic trading with"
+      section2_title2: "artificial intelligence (AI)"
+      section2_ai: "What is ALGODLA"
+      section2_ai_desc: "A software robot that trades for you. CarinaBot analyses markets and automatically trades on your account."
+      section2_money: "Pay only when you profit"
+      section2_money_desc1: "First 3 months for free. You will see how it works and whether you like it."
+      section2_money_desc2: "NO PAYMENTS IN ADVANCE"
+      section2_shield: "No access to your money"
+      section2_shield_desc: "We are not an investment firm, and we don't ask for your money. You have your money on your own account."
+      section2_automated: "Easy and automated"
+      section2_automated_desc: "ALGODLA is suitable for beginners too. Connect it to your account, and it will automatically trade for you."
+      section2_btn_free: "FIRST 3 MONTHS FOR FREE"
+      section2_result: "Results speak for themselves"
+      section3_title: "How It Works?"
+      section3_subtitle: "Automated AI-Trading Robot"
+      section3_desc: "Using artificial intelligence and triangular-modelling algorithms, CarinaBot predicts future EUR/USD price moves for period of several minutes. When a good opportunity occurs, CarinaBot trades it automatically and earns a profit on your account."
+      section3_subtitle2: "* ALGODLA can't make a withdrawal"
+      section3_btn_learn: "LEARN MORE"
+      section3_btn_free: "TRY 3 MONTHS FREE"
+      section4_title: "Why To Try"
+      section4_subtitle: "Easy. Fair. Secure."
+      section4_gift_title: "3 months for free"
+      section4_gift_desc: "It costs nothing to try. No subscription, no credit card. Try DEMO or LIVE."
+      section4_setting_title: "It's fully automated"
+      section4_setting_desc: "No special skills required. ALGODLA trades for you fully automatically."
+      section4_hand_title: "Pay only when you profit"
+      section4_hand_desc: "You only share with us 10% when it has actually earned profits for you."
+      section4_shield_title: "Safe and secure"
+      section4_shield_desc: "ALGODLA only trades for you. It can't make any withdrawals or transfers."
+      section4_btn_try: "LET'S TRY"
+      section5_title: "Who can use it?"
+      section5_desc: "Improve your trading and become profitable"
+      section5_beginner: "Beginner"
+      section5_beginner_desc: "Trade without special skills"
+      section5_expert: "Expert"
+      section5_expert_desc: "Upgrade your profitability"
+      section5_manager: "Portfolio manager"
+      section5_manager_desc: "Trade for your clients"
+    contact_us:
+      contact_title: "Contact"
+      contact_questions: "Contact us with your questions"
+      contact_touch: "Let's get in touch"
+    footer:
+      footer_title: "© 2023 ALGODLA.com"
+      footer_link1: "Terms |"
+      footer_link2: "Terms for VPS |"
+      footer_link3: "Privacy & Cookies"
+      footer_desc: "ALGODLA is an AI-powered, automated analytical web app that you can connect to your account. It conducts market analysis and provides you with real-time insights."
+  activerecord:
+    attributes:
+      enquiry:
+        name: "Name"
+        email: "Email"
+        phone_number: "Phone number"
+        message: "Message"
+  placeholders:
+    enquiry:
+      name: "Enter your full name"
+      email: "Enter your email address"
+      phone_number: "Enter your phone number"
+      message: "Enter your message"
+  global:
+    forms:
+      submit: "SUBMIT MESSAGE"

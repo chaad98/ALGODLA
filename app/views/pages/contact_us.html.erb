@@ -3,10 +3,10 @@
 <div class="contact-container">
     <div class="contact-child">
         <div class="contact-subchild one">
-            <p>Contact</p>
+            <p><%= t '.contact_title' %></p>
         </div>
         <div class="contact-subchild two">
-            <p>Contact us with your questions</p>
+            <p><%= t '.contact_questions' %></p>
         </div>
     </div>
 </div>
@@ -14,7 +14,7 @@
 <div class="section2-contact-container">
     <div class="section2-contact-child">
         <div class="section2-contact-subchild one">
-            <p>Let's get in touch</p>
+            <p><%= t '.contact_touch' %></p>
         </div>
         <div class="section2-contact-subchild two">
              <%= form_with(model: @enquiry, url: enquiries_path) do |form| %>
@@ -23,7 +23,7 @@
                         <%= form.label :name, class: "inner-label" %>
                     </div>
                     <div class="field">
-                    <%= form.text_field :name, class: "inner-field", placeholder: "Enter your full name" %>
+                    <%= form.text_field :name, class: "inner-field", placeholder: t('placeholders.enquiry.name') %>
                     </div>
                 </div>
 
@@ -32,7 +32,7 @@
                         <%= form.label :email, class: "inner-label" %>
                     </div>
                     <div class="field">
-                        <%= form.text_field :email, class: "inner-field", placeholder: "Enter your email address" %>
+                        <%= form.text_field :email, class: "inner-field", placeholder: t('placeholders.enquiry.email') %>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                         <%= form.label :phone_number, class: "inner-label" %>
                     </div>
                     <div class="field">
-                        <%= form.text_field :phone_number, class: "inner-field", placeholder: "Enter your phone number" %>
+                        <%= form.text_field :phone_number, class: "inner-field", placeholder: t('placeholders.enquiry.phone_number') %>
                     </div>
                 </div>
 
@@ -50,12 +50,12 @@
                         <%= form.label :message, class: "inner-label" %>
                     </div>
                     <div class="field">
-                        <%= form.text_area :message, class: "area-field", placeholder: "Enter your message" %>
+                        <%= form.text_area :message, class: "area-field", placeholder: t('placeholders.enquiry.message') %>
                     </div>
                 </div>
 
                 <div class="actions">
-                    <%= form.submit "SUBMIT MESSAGE", class: "submit-button" %>
+                    <%= form.submit t('global.forms.submit'), class: "submit-button" %>
                 </div>
             <% end %>
         </div>

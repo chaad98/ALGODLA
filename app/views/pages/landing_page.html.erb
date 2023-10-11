@@ -4,20 +4,20 @@
     <div class="section1-child">
         <div class="section1-subchild one">
         <!-- backup
-            <p>3.9% MONTHLY PROFITS</p>
+            <%= t '.section1_initial_desc' %>
         -->
         </div>
         <div class="section1-subchild two" id="ai">
-            <p>AI Auto-Trading Robot</p>
+            <%= t '.section1_title' %>
         </div>
         <div class="section1-subchild three">
         <!-- backup
-            <%= link_to 'SEE RESULTS', root_path, class: 'section1-btn' %>
-            <%= link_to 'TRY FOR FREE', root_path, class: 'section1-btn' %>
+            <%= link_to t('.section1_btn_result'), root_path, class: 'section1-btn' %>
+            <%= link_to t('.section1_btn_free'), root_path, class: 'section1-btn' %>
         -->
         </div>
         <div class="section1-subchild four">
-            <%= link_to "How It Works?", root_path, class: "works-path" %>
+            <%= link_to t('.section1_link_works'), root_path, class: "works-path" %>
         </div>
     </div>
     <div class="down-arrow">
@@ -31,9 +31,9 @@
     <div class="section2-child">
         <div class="section2-subchild one">
             <div class="sub-one">
-                Algorithmic trading with
+                <%= t '.section2_title1' %>
                 <br>
-                artificial intelligence (AI)
+                <%= t '.section2_title2' %>
             </div>
         </div>
         <div class="section2-subchild two">
@@ -44,10 +44,10 @@
                             <%= image_tag "ai.png", class: "icon-enlarge" %>
                         </div>
                         <div class="title">
-                            <p>What is ALGODLA</p>
+                            <p><%= t '.section2_ai' %></p>
                         </div>
                         <div class="desc">
-                            <p>A software robot that trades for you. CarinaBot analyses markets and automatically trades on your account.</p>
+                            <p><%= t '.section2_ai_desc' %></p>
                         </div>
                     </div>
                     <div class="left-image bottom">
@@ -55,12 +55,12 @@
                             <%= image_tag "save-money.png", class: "icon-enlarge" %>
                         </div>
                         <div class="title">
-                            <p>Pay only when you profit</p>
+                            <p><%= t '.section2_money' %></p>
                         </div>
                         <div class="desc">
-                            <p>First 3 months for free. You will see how it works and whether you like it.
+                            <p><%= t '.section2_money_desc1' %>
                             <br>
-                            <span class="no-payment"> NO PAYMENTS IN ADVANCE</span></p>
+                            <span class="no-payment"><%= t '.section2_money_desc2' %></span></p>
                         </div>
                     </div>
                 </div>
@@ -70,10 +70,10 @@
                             <%= image_tag "shield.png", class: "icon-enlarge" %>
                         </div>
                         <div class="title">
-                            <p>No access to your money</p>
+                            <p><%= t '.section2_shield' %></p>
                         </div>
                         <div class="desc">
-                            <p>We are not an investment firm, and we don't ask for your money. You have your money on your own account.</p>
+                            <p><%= t '.section2_shield_desc' %></p>
                         </div>
                     </div>
                     <div class="right-image bottom">
@@ -81,10 +81,10 @@
                             <%= image_tag "automated.png", class: "icon-enlarge" %>
                         </div>
                         <div class="title">
-                            <p>Easy and automated</p>
+                            <p><%= t '.section2_automated' %></p>
                         </div>
                         <div class="desc">
-                            <p>ALGODLA is suitable for beginners too. Connect it to your account, and it will automatically trade for you.</p>
+                            <p><%= t '.section2_automated_desc' %></p>
                         </div>
                     </div>
                 </div>
@@ -95,11 +95,11 @@
                 </div>
                 <div class="free-btn">
                 <!-- backup
-                    <%= link_to 'FIRST 3 MONTHS FOR FREE', root_path, class: 'section2-btn' %>
+                    <%= link_to t('.section2_btn_free'), root_path, class: 'section2-btn' %>
                     -->
                 </div>
                 <div class="result">
-                    <p>Results speak for themselves</p>
+                    <p><%= t '.section2_result' %></p>
                 </div>
             </div>
         </div>
@@ -110,24 +110,24 @@
     <div class="section3-child">
         <div class="section3-subchild">
             <div class="section3-title">
-                <p>How It Works?</p>
+                <p><%= t '.section3_title' %></p>
             </div>
             <div class="subtitle">
-                <p>Automated AI-Trading Robot</p>
+                <p><%= t '.section3_subtitle' %></p>
             </div>
             <div class="section3-desc">
-                <p>Using artificial intelligence and triangular-modelling algorithms, CarinaBot predicts future EUR/USD price moves for period of several minutes. When a good opportunity occurs, CarinaBot trades it automatically and earns a profit on your account.</p>
+                <p><%= t '.section3_desc' %></p>
             </div>
             <div class="section3-pic">
                 <%= image_tag "graph-works.png", class: "works-bot" %>
             </div>
             <div class="subtitle-two">
-                <p>* ALGODLA can't make a withdrawal</p>
+                <p><%= t '.section3_subtitle2' %></p>
             </div>
             <div class="button">
         <!-- backup
-            <%= link_to 'LEARN MORE', root_path, class: 'section3-btn' %>
-            <%= link_to 'TRY 3 MONTHS FREE', root_path, class: 'section3-btn' %>
+            <%= link_to t('.section3_btn_learn'), root_path, class: 'section3-btn' %>
+            <%= link_to t('.section3_btn_free'), root_path, class: 'section3-btn' %>
         -->
             </div>
         </div>
@@ -137,10 +137,10 @@
 <div class="section4-container">
     <div class="section4-child">
         <div class="section4-subchild one">
-            <p>Why To Try</p>
+            <p><%= t '.section4_title' %></p>
         </div>
         <div class="section4-subchild two">
-            <p>Easy. Fair. Secure.</p>
+            <p><%= t '.section4_subtitle' %></p>
         </div>
         <div class="section4-subchild three">
             <div class="innerchild one">
@@ -148,10 +148,10 @@
                     <%= image_tag "gift.png" %>
                 </div>
                 <div class="section4-title">
-                    <p>3 months for free</p>
+                    <p><%= t '.section4_gift_title' %></p>
                 </div>
                 <div class="section4-desc">
-                    <p>It costs nothing to try. No subscription, no credit card. Try DEMO or LIVE.</p>
+                    <p><%= t '.section4_gift_desc' %></p>
                 </div>
             </div>
             <div class="innerchild two">
@@ -159,10 +159,10 @@
                     <%= image_tag "setting.png" %>
                 </div>
                 <div class="section4-title">
-                    <p>It's fully automated</p>
+                    <p><%= t '.section4_setting_title' %></p>
                 </div>
                 <div class="section4-desc">
-                    <p>No special skills required. ALGODLA trades for you fully automatically.</p>
+                    <p><%= t '.section4_setting_desc' %></p>
                 </div>
             </div>
             <div class="innerchild three">
@@ -170,10 +170,10 @@
                     <%= image_tag "hand.png" %>
                 </div>
                 <div class="section4-title">
-                    <p>Pay only when you profit</p>
+                    <p><%= t '.section4_hand_title' %></p>
                 </div>
                 <div class="section4-desc">
-                    <p>You only share with us 10% when it has actually earned profits for you.</p>
+                    <p><%= t '.section4_hand_desc' %></p>
                 </div>
             </div>
             <div class="innerchild four">
@@ -181,15 +181,15 @@
                     <%= image_tag "shield2.png" %>
                 </div>
                 <div class="section4-title">
-                    <p>Safe and secure</p>
+                    <p><%= t '.section4_shield_title' %></p>
                 </div>
                 <div class="section4-desc">
-                    <p>ALGODLA only trades for you. It can't make any withdrawals or transfers.</p>
+                    <p><%= t '.section4_shield_desc' %></p>
                 </div>
             </div>
         </div>
         <div class="section4-subchild four">
-            <%= link_to "LET'S TRY", root_path, class: 'section4-btn' %>
+            <%= link_to t('.section4_btn_try'), root_path, class: 'section4-btn' %>
         </div>
     </div>
 </div>
@@ -197,10 +197,10 @@
 <div class="section5-container">
     <div class="section5-child">
         <div class="section5-subchild one"> 
-            <p>Who can use it?</p>
+            <p><%= t '.section5_title' %></p>
         </div>
         <div class="section5-subchild two">
-            <p>Improve your trading and become profitable</p>
+            <p><%= t '.section5_desc' %></p>
         </div>
         <div class="section5-subchild three">
             <div class="section5-innerchild one">
@@ -208,10 +208,10 @@
                     <%= image_tag "beginner.png", class:'section5-img' %>
                 </div>
                 <div class="section5-title">
-                    <p>Beginner</p>
+                    <p><%= t '.section5_beginner' %></p>
                 </div>
                 <div class="section5-desc">
-                    <p>Trade without special skills</p>
+                    <p><%= t '.section5_beginner_desc' %></p>
                 </div>
             </div>
             <div class="section5-innerchild two">
@@ -219,10 +219,10 @@
                     <%= image_tag "expert.png", class:'section5-img' %>
                 </div>
                 <div class="section5-title">
-                    <p>Expert</p>
+                    <p><%= t '.section5_expert' %></p>
                 </div>
                 <div class="section5-desc">
-                    <p>Upgrade your profitability</p>
+                    <p><%= t '.section5_expert_desc' %></p>
                 </div>
             </div>
             <div class="section5-innerchild three">
@@ -230,10 +230,10 @@
                     <%= image_tag "portfolio-manager.png", class:'section5-img' %>
                 </div>
                 <div class="section5-title">
-                    <p>Portfolio manager</p>
+                    <p><%= t '.section5_manager' %></p>
                 </div>
                 <div class="section5-desc">
-                    <p>Trade for your clients</p>
+                    <p><%= t '.section5_manager_desc' %></p>
                 </div>
             </div>
         </div>

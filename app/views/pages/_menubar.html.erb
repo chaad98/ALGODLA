@@ -6,8 +6,8 @@
             <% end %>
         </div>
         <div class="menu-subchild two">
-            <%= link_to "ALGODLA", root_path, class: "menu-link one" %>
-            <%= link_to "Contact", contact_path, class: "menu-link two" %>
+            <%= link_to t('.menu_link1'), root_path, class: "menu-link one" %>
+            <%= link_to t('.menu_link2'), contact_path, class: "menu-link two" %>
             <ul class="navbar-nav ml-lg-auto navbar-list">
                 <% I18n.available_locales.each_with_index do |locale, index| %>
                     <li class="nav-lang">
