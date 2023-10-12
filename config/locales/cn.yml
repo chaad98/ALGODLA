@@ -1,8 +1,13 @@
 cn:
   locales:
     en: "en"
-    ms: "ms"
+    bm: "bm"
     cn: "cn"
+  languages:
+    lang_btn: "语言"
+    english: "英语"
+    malay: "马来语"
+    chinese: "中文"
   pages:
     flash:
       success: "表单已成功提交！"

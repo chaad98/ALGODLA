@@ -8,6 +8,15 @@
         <div class="menu-subchild two">
             <%= link_to t('.menu_link1'), root_path, class: "menu-link one" %>
             <%= link_to t('.menu_link2'), contact_path, class: "menu-link two" %>
+            <div class="language-dropdown">
+                <button class="language-button"><%= t 'languages.lang_btn' %></button>
+                <ul class="language-list">
+                    <li><%= link_to t('languages.english'), url_for(locale: :en) %></li>
+                    <li><%= link_to t('languages.malay'), url_for(locale: :bm) %></li>
+                    <li><%= link_to t('languages.chinese'), url_for(locale: :cn) %></li>
+                </ul>
+            </div>
+            <!--
             <ul class="navbar-nav ml-lg-auto navbar-list">
                 <% I18n.available_locales.each_with_index do |locale, index| %>
                     <li class="nav-lang">
@@ -17,11 +26,32 @@
                         <%= link_to t(locale, scope: 'locales'), url_for(locale: locale), class: 'locale-link' %>
                     <% end %>
                     <% unless index == I18n.available_locales.size - 1 %>
-                        |&nbsp; <!-- Add spaces and the separator "|" unless it's the last language -->
+                        |&nbsp; -- Add spaces and the separator "|" unless it's the last language 
                     <% end %>
                     </li>
                 <% end %>
             </ul>
+            -->
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+        <div></div>
+    </div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><%= link_to t('.menu_link1'), root_path(locale: I18n.locale) %></li>
+                    <li><%= link_to t('.menu_link2'), contact_path(locale: I18n.locale) %></li>
+                    <li><%= link_to t('languages.english'), url_for(locale: :en) %></li>
+                    <li><%= link_to t('languages.malay'), url_for(locale: :bm) %></li>
+                    <li><%= link_to t('languages.chinese'), url_for(locale: :cn) %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 </div>

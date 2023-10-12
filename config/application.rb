@@ -14,6 +14,9 @@ module ALGODLA
     config.hosts << "algodla.com"
     config.hosts << "www.algodla.com"
 
+    config.i18n.available_locales = %i[en bm cn]
+    config.i18n.default_locale = :en
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

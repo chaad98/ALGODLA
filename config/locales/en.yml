@@ -32,8 +32,13 @@
 en:
   locales:
     en: "en"
-    ms: "ms"
+    bm: "bm"
     cn: "cn"
+  languages:
+    lang_btn: "English"
+    english: "English"
+    malay: "Malay"
+    chinese: "Chinese"
   pages:
     flash:
       success: "Form has been submitted successfully!"

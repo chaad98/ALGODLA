@@ -1,8 +1,13 @@
-ms:
+bm:
   locales:
     en: "en"
-    ms: "ms"
+    bm: "bm"
     cn: "cn"
+  languages:
+    lang_btn: "Bahasa"
+    english: "Bahasa Inggeris"
+    malay: "Bahasa Malaysia"
+    chinese: "Bahasa Cina"
   pages:
     flash:
       success: "Borang telah berjaya dihantar!"
