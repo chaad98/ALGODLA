@@ -20,3 +20,16 @@
 @import "footer.scss";
 @import "contact.scss";
 @import "flash.scss";
+
+/* For Webkit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(59, 112, 95); /* Color of the thumb (the draggable part) */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track (the non-draggable part) */
+}
