@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     root "pages#landing_page"
 
     get "contact", to: "pages#contact_us"
+    get "terms-of-use", to: "pages#terms"
+    get "terms-of-use-vps", to: "pages#terms_vps"
+    get "privacy-and-cookies", to: "pages#privacy_cookies"
 
     resources :enquiries
   end
