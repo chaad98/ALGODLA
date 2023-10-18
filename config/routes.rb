@@ -14,7 +14,5 @@ Rails.application.routes.draw do
 
     resources :enquiries
   end
-
-  get '/demo/index.htm', to: 'redirect#redirect_to_external'
-  
+    
 end
