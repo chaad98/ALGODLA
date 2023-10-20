@@ -199,13 +199,25 @@
   
     .actions {
       height: auto; /* Reset height */
-      margin-top: 6%; /* Adjust margin for smaller screens */
+      margin-top: 3%; /* Adjust margin for smaller screens */
     }
   
     .submit-button {
       width: 100%; /* Set width to 100% for responsiveness */
     }
   }  
+
+@media screen and (min-width: 1368px) {
+    .actions {
+      margin-top: 12%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .actions {
+    margin-top: 15%;
+  }
+}
 
 //section3
 .section3-contact-container{
