@@ -207,15 +207,15 @@
     }
   }  
 
-@media screen and (min-width: 1368px) {
-    .actions {
-      margin-top: 12%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 600px) {
   .actions {
     margin-top: 15%;
+  }
+}
+
+@media screen and (min-width: 1368px) and (min-height: 912px) {
+  .actions {
+    margin-top: 12%;
   }
 }
 
