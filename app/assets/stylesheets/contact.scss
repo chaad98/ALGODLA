@@ -133,7 +133,7 @@
 
 .actions{
     height: 80px;
-    margin-top: 9%;
+    margin-top: 12vh
 }
 
 .submit-button{
@@ -206,18 +206,6 @@
       width: 100%; /* Set width to 100% for responsiveness */
     }
   }  
-
-@media screen and (min-width: 1024px) and (min-height: 600px) {
-  .actions {
-    margin-top: 15%;
-  }
-}
-
-@media screen and (min-width: 1368px) and (min-height: 912px) {
-  .actions {
-    margin-top: 12%;
-  }
-}
 
 //section3
 .section3-contact-container{
