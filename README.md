@@ -1,25 +1,6 @@
-# README
+# This video demonstrates what does ALGODLA looks like
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+https://github.com/chaad98/ALGODLA/assets/61421925/fc35c641-5481-46cd-a3f7-742ba251ab90
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# ALGODLA
